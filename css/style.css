@@ -1124,3 +1124,42 @@ h1, h2, h3, h4, h5,
         .comment-list li .comment-body .reply:hover {
           color: #000;
           background: #e3e3e3; }
+
+.single-post-area .quote-wrapper {
+  background: rgba(130, 139, 178, 0.1);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.single-post-area .fig-wrapper {
+  background: rgba(0, 0, 0, 0.0);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+/*  font-style: italic;*/
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 1094, E:/172 Etrain Education/172_Etrain_Education_html/sass/_blog.scss */
+.single-post-area .fig-caption {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+
+/* line 1094, E:/172 Etrain Education/172_Etrain_Education_html/sass/_blog.scss */
+.single-post-area .quotes {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+  border-left: 2px solid;
+}
