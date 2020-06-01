@@ -25,51 +25,39 @@
 
     <link rel="stylesheet" href="css/style.css">
     
+    <script src="js/csi.js"></script>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script> 
+        $(function(){
+            $("#includedContent").load("courses.html"); 
+        });
+    </script> 
+
+    
   </head>
+  
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
   <div class="site-wrap">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
    
     
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">Owen Lewis, Ph.D.</a></div>
 
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="index.html#home-section" class="nav-link">Home</a></li>
-                <li><a href="index.html#research-section" class="nav-link">Research</a></li>
-                <li><a href="index.html#teaching-section" class="nav-link">Teaching</a></li>
-                <li><a href="index.html#outreach-section" class="nav-link">Outreach</a></li>
-                <li><a href="#index.htmlpublications-section" class="nav-link">Publications</a></li>
-              </ul>
-            </nav>
-          </div>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo mr-auto w-25"><a href="index.html">Owen Lewis, Ph.D.</a></div>
 
-          <div class="ml-auto w-25">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="index.html#contact-section" class="nav-link"><span>Contact Me</span></a></li>
-              </ul>
-            </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
-          </div>
-        </div>
-      </div>
-      
-    </header>
+                    
+                    <ul class="site-menu main-menu site-menu-dark">
+                                <li class="cta"><a href="mailto:olewis@math.fsu.edu"><span>Contact Me</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </header>
 
     <div class="intro-section single-cover" id="home-section">
       
@@ -106,16 +94,6 @@
                 <strong class="text-white mr-3">Schedule: </strong> Section 29: M 3:35 - 4:25 & TH 3:35 - 4:50 
               </p>
               <p>I am teaching two separate sections of MAC 2312, Calculus 2. I will be using Canvas to maintain the course webpage. A link to the Canvas site for Sections 24 and 29 can be found below. They site will not be visible unless you are a student enrolled in the class.</p>
-<!--
-              <div class="row mb-4">
-                <div class="col-md-6">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                  <img src="images/img_2.jpg" alt="Image" class="img-fluid rounded">
-                </div>
-              </div>
--->
 
               <p class="mt-4"><a href="https://canvas.fsu.edu/courses/121983" class="btn btn-primary">Course Webpage</a></p>
             </div>
@@ -133,7 +111,6 @@
               <div class="mb-4 text-center">
                 <img src="images/Diving_Port.jpeg" alt="Image" class="w-25 rounded-circle mb-5">  
                 <h3 class="h5 text-black mb-4">Owen Lewis</h3>
-<!--                <p>Lorem ipsum dolor sit amet sectetur adipisicing elit. Ipsa porro expedita libero pariatur vero eos.</p>-->
               </div>
             </div>
 
@@ -157,66 +134,9 @@
 
           <div class="owl-carousel col-12 nonloop-block-14">
 
-                <div class="course bg-white h-100 align-self-stretch">
-                            <figure class="m-0">
-                                <a href="#"><img src="images/Green_Canyon.jpg" alt="Image" class="img-fluid"></a>
-                            </figure>
-                            <div class="course-inner-text py-4 px-4">
-                                <div class="meta"><span class="icon-clock-o"></span>Spring 2020</div>
-                                <h3><a href="Spring2020.html">Calc 2 (MAC 2312)</a></h3>
-                                <p>2 Sections </p>
-                            </div>
-                            <!--          
-               <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
--->
-                        </div>
 
-                        <div class="course bg-white h-100 align-self-stretch">
-                            <figure class="m-0">
-                                <a href="#"><img src="images/pumpkin.jpg" alt="Image" class="img-fluid"></a>
-                            </figure>
-                            <div class="course-inner-text py-4 px-4">
-                                <div class="meta"><span class="icon-clock-o"></span>Fall 2019</div>
-                                <h3><a href="#">Calc 2 (MAC 2312)</a></h3>
-                                <p>Sections 17 and 20 </p>
-                            </div>
-                        </div>
-
-                        <div class="course bg-white h-100 align-self-stretch">
-                            <figure class="m-0">
-                                <a href="#"><img src="images/acadia.jpg" alt="Image" class="img-fluid"></a>
-                            </figure>
-                            <div class="course-inner-text py-4 px-4">
-                                <div class="meta"><span class="icon-clock-o"></span>Spring 2019</div>
-                                <h3><a href="#">Calc 2 (MAC 2312)</a></h3>
-                                <p>Sections 22 and 27 </p>
-                            </div>
-                        </div>
-
-                        <div class="course bg-white h-100 align-self-stretch">
-                            <figure class="m-0">
-                                <a href="#"><img src="images/cling.jpg" alt="Image" class="img-fluid"></a>
-                            </figure>
-                            <div class="course-inner-text py-4 px-4">
-                                <div class="meta"><span class="icon-clock-o"></span>Fall 2018</div>
-                                <h3><a href="#">Calc 2 (MAC 2312)</a></h3>
-                                <p>Sections 14 and 17 </p>
-                            </div>
-                        </div>
-
-                        <div class="course bg-white h-100 align-self-stretch">
-                            <figure class="m-0">
-                                <a href="#"><img src="images/barry_carry.jpg" alt="Image" class="img-fluid"></a>
-                            </figure>
-                            <div class="course-inner-text py-4 px-4">
-                                <div class="meta"><span class="icon-clock-o"></span>Spring 2018</div>
-                                <h3><a href="#">Stats for Biologists (MATH 1180)</a></h3>
-                                <p>Calculus-based probability and statistics for biology majors.</p>
-                            </div>
-                        </div>
+                Course Site Carousel Goes Here.
+                        
 
           </div>
 
@@ -285,8 +205,6 @@
   
     
   </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
